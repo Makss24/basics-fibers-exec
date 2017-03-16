@@ -1,0 +1,34 @@
+<head>
+  <title>test-fibers</title>
+</head>
+
+<body>
+
+  <h1>Test de fibers</h1>
+
+  <hr style="margin:20px;">
+
+  {{ > actions}}
+
+  <hr style="margin:20px;">
+
+  {{ > informations}}
+
+</body>
+
+
+<template name="actions">
+  <button class="js-launch-pwd">Test de la commande pwd</button>
+  <p class="js-result-pwd" style="display: none;">Résultat de la commande `pwd` : <br/>
+    {{ pwdResult }}
+  </p>
+</template>
+
+<template name="informations">
+  <h4>Autres ressources :</h4>
+  <p><a target="_blank" href="https://eureka.ykyuen.info/2015/02/26/meteor-run-shell-command-at-server-side/">Tuto de base</a></p>
+  <p><a target="_blank" href="https://nodejs.org/api/child_process.html">Doc Node child_process</a></p>
+
+  <h4>Encore plus :</h4>
+  <p><a target="_blank" href="https://atmospherejs.com/jchristman/exec">Package Atmosphere jchristman:exec</a></p>
+</template>
