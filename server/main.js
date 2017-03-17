@@ -8,7 +8,7 @@ Meteor.startup(() => {
     'command.pwd'() {
       this.unblock();
       const future = new Future();
-      const command = 'qsqsqspwd';
+      const command = 'pwd';
       childProcess.exec(command, (error, stdout, stderr) => {
         if (error) {
           console.log(error);
